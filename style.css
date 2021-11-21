@@ -1,0 +1,474 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main{
+    width:100%;
+    min-height: 110vh;
+    max-height: 500vh;
+    background-color:#000000;
+    position: relative;
+    background-image: url(./portfolio-files/bkghome.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: right bottom;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 55px ;
+    background-color: #78b8d8;
+    z-index: 100;
+    box-shadow: 1px, 1px 5px rgba(0, 0, 0, .5);
+}
+
+.logo img{
+    height: 65px;
+    padding-top: 10px;
+
+}
+
+.menu-bar{
+    display: flex;
+}
+
+.menu-bar li a{
+    padding: 10px;
+    color: rgb(66, 63, 63);
+}
+
+.menu-bar li a:hover{
+    background-color: #af2d2d;
+    color: blanchedalmond;
+    font-weight: 200;
+    transition: all ease 0.4s;
+}
+
+.home{
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 450px;
+    top: 50%;
+    margin-left: 60px;
+    transform: translate(0, -50%) ;
+    box-sizing: border-box;
+}
+
+.home h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 45px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 4px;
+    margin-top: 15px;
+}
+
+.home .information{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+.first-name{
+    color:rgb(155, 189, 252);
+    font-size: 55px ;
+}
+
+.resume-download{
+    width: 200px;
+    height: 45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    margin-left: 70px;
+    margin-top: 15px;
+}
+
+.resume-download:hover{
+    background-color: #9db0c0;
+    box-shadow: 2px 2px 10px black;
+    transition: all ease .2s
+}
+
+.social-media-icons{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media-icons a{
+    margin-right: 12px;
+}
+
+.social-media-icons i{
+    color:white;
+    font-size: 45px;
+}
+
+.social-media-icons a:hover i{
+    color: rgb(0, 204, 255);
+    transition: all ease .2s;
+    font-size: 55px;
+}
+
+
+/* About */
+
+.about{
+    width: 100%;
+    min-height: 110vh;
+    background: url(./portfolio-files/StarsBG2.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    box-sizing: border-box;
+    background-position: right bottom;
+
+}
+
+.about .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 150px 5% 0 5%;
+}
+
+.about .wrapper .about-img{
+    width: 50%;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+
+}
+
+.about-img:before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -25px;
+    top: 30px;
+    border: solid 10px rgb(0, 255, 247);
+    content:'';
+    filter: blur(25px);
+}
+
+.about-img:hover{
+    box-shadow: 2px 2px 30px salmon;
+    transition: all ease 2s;
+}
+
+.about .about-img img{
+    width: 500px;
+}
+
+.about .about-info{
+    margin-left: 10px;
+
+}
+
+.about .about-info .about-title{
+    font-size: 5rem;
+    color: #00eeff;
+    margin: 0px;
+    padding:0px;
+}
+
+.about .about-text{
+    font-size: 1rem;
+    color:rgb(159, 180, 219)
+
+}
+
+.bestport{
+    width: 100%;
+    min-height: 110vh;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    background: url(./portfolio-files/StarsBG3.png);
+    box-sizing: border-box;
+}
+
+.bestport .header{
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.bestport h1{
+    font-size: 4rem;
+    color: white;
+    margin:0;
+    padding: 0;
+}
+
+.bestport p{
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
+
+.bestport .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 375px;
+    height: 700px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 3px, 3px, 10px, black;
+    overflow: hidden;
+}
+
+.card:hover{
+    transform: translateY(-15px);
+    transition: all ease 0.2s;
+}
+
+.card .card-project-name{
+    color: white;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    margin-top: 0px;
+    padding: 10px 15px;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    font-weight: 400;
+    text-decoration: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card .card-img{
+    width:100%;
+    height: 70%;
+}
+.card .card-img img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .card-text{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+}
+
+.card .card-text a{
+    color: white;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    display: -webkit-box;
+    max-width: 80%;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.portfolio{
+    width: 100%;
+    height:100vh;
+    background: url(./portfolio-files/StarsBG2.png);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: right bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 2% 20px 2%;
+}
+
+.portfolio .header{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    padding: 10px 20px;
+}
+
+.portfolio-card{
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgb(188, 199, 219);
+    position: relative;
+}
+
+.portfolio-wrapper{
+    width: 90%;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.portfolio-card-text{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(159, 180, 219);
+    display: none;
+}
+
+.portfolio-card-text h2{
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    padding: 0;
+    margin:0;
+}
+
+.portfolio-card-text p{
+    color: white;
+    font-size: 1rem;
+    margin:0;
+}
+
+.portfolio-card:hover .portfolio-card-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Contact */
+.contact {
+    width: 100%;
+    min-height: 10vh;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(./portfolio-files/StarsBG3.png);
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    padding-left: 15px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact .footer{
+    margin-right: 200px;
+
+}
+
+.contact a{
+    color:white;
+    text-decoration: underline;
+}
+
+.contact .footer2 a{
+    padding: 10px;
+    color: rgb(66, 63, 63);
+    font-size: 25px;
+}
+
+.contact .footer2 a:hover{
+    color: rgb(0, 204, 255);
+    transition: all ease .2s;
+    font-size: 55px;
+}
+
+@media(max-width: 1263px){
+
+    .about-img img{
+        width: 450px;
+    }
+
+    .portfolio{
+        height: auto;
+    }
+
+    .bestport .wrapper{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        flex-grow: 1;
+    }
+
+    .bestport .wrapper .card h1{
+        text-align: center;
+    }
+
+    .contact-frm form{
+        width:85% !important
+    }
+}
+
+@media(max-width:1127px){
+    .about .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .about-info{
+        width: 400px;
+        margin-bottom: 150px;
+    }
+
+    .about .about-info .about-title{
+        font-size: 5rem;
+        color: #00eeff;
+        margin: 0px;
+        padding:0px;
+        text-align: center;
+    }
+
+    .about .about-text{
+        font-size: 1rem;
+        color:rgb(159, 180, 219);
+        text-align: center
+    }
+
+}
