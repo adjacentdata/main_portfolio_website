@@ -220,6 +220,7 @@ h5 {
     align-items: center;
     background: url(./portfolio-files/StarsBG3.png);
     box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .bestport .header{
